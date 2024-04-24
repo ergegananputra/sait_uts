@@ -1,0 +1,2134 @@
+{
+	"info": {
+		"_postman_id": "34502459-3a71-429c-8500-fc96218d104e",
+		"name": "SAIT API UTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29887401"
+	},
+	"item": [
+		{
+			"name": "mahasiswa",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_001",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"mahasiswa",
+								"mahasiswa.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tanggal_lahir",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_001",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"mahasiswa",
+										"mahasiswa.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:40:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get mahasiswa by nim ['sv_001']\",\n    \"data\": [\n        {\n            \"nim\": \"sv_001\",\n            \"nama\": \"joko\",\n            \"alamat\": \"bantul\",\n            \"tanggal_lahir\": \"1999-12-07\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"mahasiswa",
+								"mahasiswa.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_001",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tanggal_lahir",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"mahasiswa",
+										"mahasiswa.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_001",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:40:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "295"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get all mahasiswa\",\n    \"data\": [\n        {\n            \"nim\": \"sv_001\",\n            \"nama\": \"joko\",\n            \"alamat\": \"bantul\",\n            \"tanggal_lahir\": \"1999-12-07\"\n        },\n        {\n            \"nim\": \"sv_002\",\n            \"nama\": \"paul\",\n            \"alamat\": \"sleman\",\n            \"tanggal_lahir\": \"2000-10-07\"\n        },\n        {\n            \"nim\": \"sv_003\",\n            \"nama\": \"andy\",\n            \"alamat\": \"surabaya\",\n            \"tanggal_lahir\": \"2000-02-09\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "sv_010",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Adiel Boanerge",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Sleman",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "1980-10-10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"mahasiswa",
+								"mahasiswa.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_001",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Copy 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "sv_010",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "Adiel Boanerge",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Sleman",
+											"type": "text"
+										},
+										{
+											"key": "tanggal_lahir",
+											"value": "1980-10-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"mahasiswa",
+										"mahasiswa.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_001",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:42:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "148"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success insert new mahasiswa\",\n    \"data\": {\n        \"nim\": \"sv_010\",\n        \"nama\": \"Adiel Boanerge\",\n        \"alamat\": \"Sleman\",\n        \"tanggal_lahir\": \"1980-10-10\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "sv_010",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Adiel Boanerge",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jogja",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "1980-10-10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_010",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"mahasiswa",
+								"mahasiswa.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "sv_010",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "Adiel Boanerge",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "Jogja",
+											"type": "text"
+										},
+										{
+											"key": "tanggal_lahir",
+											"value": "1980-10-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_010",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"mahasiswa",
+										"mahasiswa.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_010"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:46:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "161"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success update mahasiswa by nim ['sv_010']\",\n    \"data\": {\n        \"nim\": \"sv_010\",\n        \"nama\": \"Adiel Boanerge\",\n        \"alamat\": \"Jogja\",\n        \"tanggal_lahir\": \"1980-10-10\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_010",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"mahasiswa",
+								"mahasiswa.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Copy 4",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "alamat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tanggal_lahir",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/mahasiswa/mahasiswa.php?nim=sv_010",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"mahasiswa",
+										"mahasiswa.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_010"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:46:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success delete cars by nim ['sv_010']\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "matakuliah",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_001",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"matakuliah",
+								"matakuliah.php"
+							],
+							"query": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_mk",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "sks",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_001",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"matakuliah",
+										"matakuliah.php"
+									],
+									"query": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:51:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "128"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get cars by kode_mk ['svpl_001']\",\n    \"data\": [\n        {\n            \"kode_mk\": \"svpl_001\",\n            \"nama_mk\": \"database\",\n            \"sks\": \"2\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"matakuliah",
+								"matakuliah.php"
+							],
+							"query": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_001",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_mk",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "sks",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"matakuliah",
+										"matakuliah.php"
+									],
+									"query": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_001",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:52:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "237"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get all cars\",\n    \"data\": [\n        {\n            \"kode_mk\": \"svpl_001\",\n            \"nama_mk\": \"database\",\n            \"sks\": \"2\"\n        },\n        {\n            \"kode_mk\": \"svpl_002\",\n            \"nama_mk\": \"kecerdasan artificia\",\n            \"sks\": \"2\"\n        },\n        {\n            \"kode_mk\": \"svpl_003\",\n            \"nama_mk\": \"interoperabilitas\",\n            \"sks\": \"2\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_014",
+									"type": "text"
+								},
+								{
+									"key": "nama_mk",
+									"value": "VERVAL",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"matakuliah",
+								"matakuliah.php"
+							],
+							"query": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_001",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_010",
+											"type": "text"
+										},
+										{
+											"key": "nama_mk",
+											"value": "PAD",
+											"type": "text"
+										},
+										{
+											"key": "sks",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"matakuliah",
+										"matakuliah.php"
+									],
+									"query": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_001",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:54:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success insert new cars\",\n    \"data\": {\n        \"kode_mk\": \"svpl_010\",\n        \"nama_mk\": \"PAD\",\n        \"sks\": \"2\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_010",
+									"type": "text"
+								},
+								{
+									"key": "nama_mk",
+									"value": "PAD2",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_010",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"matakuliah",
+								"matakuliah.php"
+							],
+							"query": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_010",
+											"type": "text"
+										},
+										{
+											"key": "nama_mk",
+											"value": "PAD2",
+											"type": "text"
+										},
+										{
+											"key": "sks",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_010",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"matakuliah",
+										"matakuliah.php"
+									],
+									"query": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_010"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:55:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success update cars by kode_mk ['svpl_010']\",\n    \"data\": {\n        \"kode_mk\": \"svpl_010\",\n        \"nama_mk\": \"PAD2\",\n        \"sks\": \"2\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_010",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"matakuliah",
+								"matakuliah.php"
+							],
+							"query": [
+								{
+									"key": "kode_mk",
+									"value": "svpl_010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama_mk",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "sks",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/matakuliah/matakuliah.php?kode_mk=svpl_010",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"matakuliah",
+										"matakuliah.php"
+									],
+									"query": [
+										{
+											"key": "kode_mk",
+											"value": "svpl_010"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:55:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success delete cars by kode_mk ['svpl_010']\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "perkuliahan",
+			"item": [
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kode_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nilai",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "id_perkuliahan",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "kode_mk",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "nilai",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "id_perkuliahan",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:59:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get cars by id_perkuliahan [1]\",\n    \"data\": [\n        {\n            \"id_perkuliahan\": \"1\",\n            \"nim\": \"sv_001\",\n            \"kode_mk\": \"svpl_001\",\n            \"nilai\": \"90\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kode_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nilai",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "id_perkuliahan",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "kode_mk",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "nilai",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "id_perkuliahan",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 07:58:56 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "414"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success get all cars\",\n    \"data\": [\n        {\n            \"id_perkuliahan\": \"1\",\n            \"nim\": \"sv_001\",\n            \"kode_mk\": \"svpl_001\",\n            \"nilai\": \"90\"\n        },\n        {\n            \"id_perkuliahan\": \"2\",\n            \"nim\": \"sv_001\",\n            \"kode_mk\": \"svpl_002\",\n            \"nilai\": \"87\"\n        },\n        {\n            \"id_perkuliahan\": \"3\",\n            \"nim\": \"sv_001\",\n            \"kode_mk\": \"svpl_003\",\n            \"nilai\": \"88\"\n        },\n        {\n            \"id_perkuliahan\": \"4\",\n            \"nim\": \"sv_002\",\n            \"kode_mk\": \"svpl_001\",\n            \"nilai\": \"98\"\n        },\n        {\n            \"id_perkuliahan\": \"5\",\n            \"nim\": \"sv_002\",\n            \"kode_mk\": \"svpl_002\",\n            \"nilai\": \"77\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "sv_003",
+									"type": "text"
+								},
+								{
+									"key": "kode_mk",
+									"value": "svpl_003",
+									"type": "text"
+								},
+								{
+									"key": "nilai",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "id_perkuliahan",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "sv_003",
+											"type": "text"
+										},
+										{
+											"key": "kode_mk",
+											"value": "svpl_003",
+											"type": "text"
+										},
+										{
+											"key": "nilai",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "id_perkuliahan",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 08:01:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success insert new cars\",\n    \"data\": {\n        \"nim\": \"sv_003\",\n        \"kode_mk\": \"svpl_003\",\n        \"nilai\": \"100\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "sv_003",
+									"type": "text"
+								},
+								{
+									"key": "kode_mk",
+									"value": "svpl_003",
+									"type": "text"
+								},
+								{
+									"key": "nilai",
+									"value": "90",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=6",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "id_perkuliahan",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "sv_003",
+											"type": "text"
+										},
+										{
+											"key": "kode_mk",
+											"value": "svpl_003",
+											"type": "text"
+										},
+										{
+											"key": "nilai",
+											"value": "90",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=6",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "id_perkuliahan",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 08:02:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success update cars by id_perkuliahan [6]\",\n    \"data\": {\n        \"nim\": \"sv_003\",\n        \"kode_mk\": \"svpl_003\",\n        \"nilai\": \"90\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update By NIM dan Kode MK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nilai",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?nim=sv_003&kode_mk=svpl_003",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_003"
+								},
+								{
+									"key": "kode_mk",
+									"value": "svpl_003"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "sv_003",
+											"type": "text"
+										},
+										{
+											"key": "kode_mk",
+											"value": "svpl_003",
+											"type": "text"
+										},
+										{
+											"key": "nilai",
+											"value": "90",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=6",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "id_perkuliahan",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 08:02:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success update cars by id_perkuliahan [6]\",\n    \"data\": {\n        \"nim\": \"sv_003\",\n        \"kode_mk\": \"svpl_003\",\n        \"nilai\": \"90\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kode_mk",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nilai",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?id_perkuliahan=7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "id_perkuliahan",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By NIM dan Kode MK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "kode_mk",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nilai",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?nim=sv_003&kode_mk=svpl_003",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"v1",
+								"perkuliahan",
+								"perkuliahan.php"
+							],
+							"query": [
+								{
+									"key": "nim",
+									"value": "sv_003"
+								},
+								{
+									"key": "kode_mk",
+									"value": "svpl_003"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete By NIM dan Kode MK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nim",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "kode_mk",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "nilai",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/v1/perkuliahan/perkuliahan.php?nim=sv_003&kode_mk=svpl_003",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"v1",
+										"perkuliahan",
+										"perkuliahan.php"
+									],
+									"query": [
+										{
+											"key": "nim",
+											"value": "sv_003"
+										},
+										{
+											"key": "kode_mk",
+											"value": "svpl_003"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 24 Apr 2024 08:16:38 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"message\": \"Success delete perkuliahan by nim ['sv_003'] and kode_mk ['svpl_003']\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/index.php"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://127.0.0.1/sait_uts/api",
+			"type": "string"
+		}
+	]
+}

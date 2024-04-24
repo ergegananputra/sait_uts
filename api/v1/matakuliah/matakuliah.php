@@ -89,6 +89,7 @@ function insertMatakuliah() {
     if ($m->countAtribute() == count(array_intersect_key($data, $m->getEmptyData()))) {
         
         $result = mysqli_query($mysqli, "INSERT INTO " . MatakuliahModel::TABLE . " SET
+            " . MatakuliahModel::KODE_MK . " = '" . $data[MatakuliahModel::KODE_MK] . "',
             " . MatakuliahModel::NAMA_MK . " = '" . $data[MatakuliahModel::NAMA_MK] . "',
             " . MatakuliahModel::SKS . " = '" . $data[MatakuliahModel::SKS] . "'");
 
